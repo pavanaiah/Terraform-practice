@@ -1,0 +1,47 @@
+variable "vpc_cidr" {
+    type = string
+    default = "10.0.0.0/16"
+  
+}
+
+variable "vpc_name" {
+    type = string
+    default = "my_vpc"
+  
+}
+
+variable "sub1-az" {
+    type = string
+    default = "ap-south-1a"
+  
+}
+
+variable "sub1-cidr" {
+    type = string
+    default = "10.0.0.0/21"
+  
+}
+
+variable "sub1-name" {
+    type = string
+    default = "subnet-1a"
+  
+}
+
+variable "sub2-az" {
+    type = string
+    default = "ap-south-1b"
+  
+}
+
+variable "sub2-cidr" {
+    type = string
+    default = "10.0.253.0/24"
+  
+}
+
+variable "sub2-name" {
+    type = string
+    default = "subnet-1b"
+  
+}

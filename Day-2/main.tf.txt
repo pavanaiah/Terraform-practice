@@ -1,0 +1,32 @@
+resource "aws_vpc" "vpc1" {
+    cidr_block = var.vpc_cidr
+
+    tags = {
+      Name = var.vpc_name
+     }
+  
+}
+
+
+resource "aws_subnet" "sub1" {
+    vpc_id = aws_vpc.vpc1.id
+    availability_zone = var.sub1-az
+    cidr_block = var.sub1-cidr
+
+    tags = {
+      Name = var.sub1-name
+    }
+  
+}
+
+
+resource "aws_subnet" "sub2" {
+    vpc_id = aws_vpc.vpc1.id
+    availability_zone = var.sub2-az
+    cidr_block = var.sub2-cidr
+    
+    tags = {
+        Name = var.sub2-name
+    }
+    
+}
