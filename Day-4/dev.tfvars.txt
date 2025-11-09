@@ -1,0 +1,9 @@
+resource_values = {
+vpc-cidr = “10.0.0.0/16”
+vpc-name = “dev-vpc”
+subnet-info = {
+sub-az = [“ap-south-1a”]
+sub-cidr = [“10.0.1.0/24”]
+sub-name = [“dev-sub-1”]
+}
+}
